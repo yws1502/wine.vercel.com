@@ -17,14 +17,14 @@ export const Navigation = () => {
           {
             ROUTES.map((routeObject: ROUTE) => {
               return (
-                <li>
+                <li key={`Beverage-${routeObject.ID}`}>
                   <Link href={routeObject.PATH}>
                     <a>{routeObject.LABEL}</a>
                   </Link>
                   <ul>
                     {routeObject.SUBS && routeObject.SUBS.map((subRouteObject: ROUTE) => {
                       return (
-                        <li>
+                        <li key={`${subRouteObject.LABEL}-${subRouteObject.ID}`}>
                           <Link href={`${routeObject.PATH}${subRouteObject.PATH}`}>
                             <a>{subRouteObject.LABEL}</a>
                           </Link>
