@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { MY_PATH } from "../../constants";
 
 const WinePage: NextPage = () => {
-  const wines = ["reds", "whites", "port", "sparkling", "rose", "dessert"];
   let path = MY_PATH + "wines/";
 
   return (

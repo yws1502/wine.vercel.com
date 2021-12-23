@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { WineCard, WineCardList } from "../../components";
+import { WineContainer } from "../../components";
 // Q. import 가 뭔가요? > 몰라도 됌
 
 const RoseWinePage: NextPage = () => {
   const name = "rose";
   return (
     <div>
-      <WineCardList name={name} />
+      <WineContainer name={name} />
     </div>
   )
 }

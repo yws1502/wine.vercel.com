@@ -2,11 +2,11 @@ import { Error, Loading, BeerCard } from "../components";
 import { useBeerData } from "../hooks/useBeerData";
 import { Beer } from "../types/Beer";
 
-interface BeerCardListProps {
+interface BeerContainerProps {
   name: string;
 }
 
-export const BeerCardList = ({ name }: BeerCardListProps) => {
+export const BeerContainer = ({ name }: BeerContainerProps) => {
   const { data, error } = useBeerData(name);
 
   if (error) return <Error />;

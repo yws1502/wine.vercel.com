@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { WineCardList } from "../../components";
+import { WineContainer } from "../../components";
 
 const SparklingPage: NextPage = () => {
   const name = "sparkling";
 
   return (
     <div>
-      <WineCardList name={name} />
+      <WineContainer name={name} />
     </div>
   )
 }

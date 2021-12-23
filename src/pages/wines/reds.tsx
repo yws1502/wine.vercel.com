@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { WineCard, WineCardList } from "../../components"; 
+import { WineContainer } from "../../components"; 
 // Q. import 가 뭔가요? > 몰라도 됌
 
 const RedsWinePage: NextPage = () => {
@@ -7,7 +7,7 @@ const RedsWinePage: NextPage = () => {
 
   return (
     <div>
-      <WineCardList name={name} />
+      <WineContainer name={name} />
     </div>
   )
 }
