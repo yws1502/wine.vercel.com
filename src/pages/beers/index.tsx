@@ -14,7 +14,7 @@ const BeerPage: NextPage = () => {
         </article>
         <article>
           <a href={path + "/stouts"}>
-            ale beer
+            stouts beer
           </a>
         </article>
     </div>
