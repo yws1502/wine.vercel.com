@@ -1,1 +1,0 @@
-export const LinkItem = (path: string, item:string)
