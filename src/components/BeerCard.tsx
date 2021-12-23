@@ -5,11 +5,9 @@ interface BeerCardProps {
 }
 
 export const BeerCard = ({ beerData }: BeerCardProps) => {
-  const { name, price, image } = beerData;
-  console.log(image);
+  const { name, price } = beerData;
   return (
     <div>
-      <img src={image} alt="" />
       <h2>{name}</h2>
       <p>{price}</p>
     </div>

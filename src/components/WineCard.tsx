@@ -35,7 +35,7 @@ const Container = styled.div`
 `
 
 
-const Average = styled.div`
+const Average = styled.span`
   display: inline-block;
   padding: 0.3em;
   font-size: 16px;

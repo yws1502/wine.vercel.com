@@ -16,8 +16,8 @@ export const BeerContainer = ({ name }: BeerContainerProps) => {
     <main>
       {data.map((beerData: Beer) => {
         return (
-          <BeerCard  
-            key={`${name}-beer-list-${beerData.id}`}
+          <BeerCard 
+            key={`${name}-beer-data-${beerData.id}`}
             beerData={beerData}
           />
         )

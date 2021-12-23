@@ -4,6 +4,7 @@ import { WineContainer } from "../../components";
 
 const RoseWinePage: NextPage = () => {
   const name = "rose";
+  
   return (
     <div>
       <WineContainer name={name} />
