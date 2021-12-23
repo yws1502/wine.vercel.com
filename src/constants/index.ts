@@ -11,8 +11,8 @@ export const MEDIA_QUERY_END_POINT = {
 export const ROUTES = [
   {
     ID: 0,
-    PATH: "/beers",
-    LABEL: "맥주",
+    PATH: '/beers',
+    LABEL: '맥주',
     SUBS: [
       {
         ID: 0,
@@ -25,13 +25,13 @@ export const ROUTES = [
         PATH: '/stouts',
         LABEL: '스타우트',
         ORDER: 1,
-      },
+      }
     ]
   },
   {
     ID: 1,
     PATH: '/wines',
-    LABEL: "와인",
+    LABEL: '와인',
     SUBS: [
       {
         ID: 0,
