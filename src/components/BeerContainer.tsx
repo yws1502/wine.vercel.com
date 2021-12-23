@@ -1,4 +1,4 @@
-import { Error, Loading, BeerCard } from "../components";
+import { Error, Loading, BeerCard } from ".";
 import { useBeerData } from "../hooks/useBeerData";
 import { Beer } from "../types/Beer";
 
@@ -13,18 +13,15 @@ export const BeerContainer = ({ name }: BeerContainerProps) => {
   if (!data) return <Loading />;
 
   return (
-    <div>
-      <h1>Ale Beer</h1>
-      <main>
-        {data.map((beerData: Beer) => {
-          return (
-            <BeerCard  
-              key={`ale-beer-list-${beerData.id}`}
-              beerData={beerData}
-            />
-          )
-        })}
-      </main>
-    </div>
+    <main>
+      {data.map((beerData: Beer) => {
+        return (
+          <BeerCard  
+            key={`${name}-beer-list-${beerData.id}`}
+            beerData={beerData}
+          />
+        )
+      })}
+    </main>
   )
 }

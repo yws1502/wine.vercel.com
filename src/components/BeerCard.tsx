@@ -1,16 +1,17 @@
 import { Beer } from "../types/Beer";
 
-interface WineProps {
+interface BeerCardProps {
   beerData: Beer;
 }
 
-export const BeerCard = ({ beerData }: WineProps) => {
-  const { name, price, rating } = beerData;
+export const BeerCard = ({ beerData }: BeerCardProps) => {
+  const { name, price, image } = beerData;
+  console.log(image);
   return (
     <div>
-      <h1>{name}</h1>
+      <img src={image} alt="" />
+      <h2>{name}</h2>
       <p>{price}</p>
-      <p>{rating.reviews}</p>
     </div>
   )
 }

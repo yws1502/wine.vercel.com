@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Error, Loading, WineCard } from ".";
-import { MEDIA_QUERY_END_POINT } from "../constants/"
+import { MEDIA_QUERY_END_POINT } from "../constants"
 import { useWineData } from "../hooks/useWineData";
 import { Wine } from "../types/Wine";
 
@@ -22,7 +22,7 @@ export const WineContainer = ({ name }: WineContainerProps) => {
           // const { id, wine, winery } = wineData;
           return (
             <WineCard
-              key={`port-wine-list-${wineData.id}`}
+              key={`${name}-wine-list-${wineData.id}`}
               wineData={wineData}
             />
           )
@@ -39,6 +39,7 @@ const WineTitle = styled.h1`
 
 const WineCardContainer = styled.main`
   display: grid;
+  gap: 1em;
 
   @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
     grid-template-columns: repeat(2, 1fr);
